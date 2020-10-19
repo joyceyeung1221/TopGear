@@ -4,41 +4,41 @@ namespace GearBox
 {
     public class GearBox
     {
-        private int s = 0;
+        private int gear = 0;
         private int e = 0;
 
-        public void doit(int i)
+        public void doit(int rpm)
         {
-            if (s < 0)
+            if (gear < 0)
             {
                 // do nothing!
-                e = i;
+                e = rpm;
             }
             else
             {
-                if (s > 0)
+                if (gear > 0)
                 {
-                    if (i > 2000)
+                    if (rpm > 2000)
                     {
-                        s++;
+                        gear++;
                     }
-                    else if (i < 500)
+                    else if (rpm < 500)
                     {
-                        s--;
+                        gear--;
                     }
                 }
             }
 
-            if (s > 6)
+            if (gear > 6)
             {
-                s--;
+                gear--;
             }
-            else if (s < 1)
+            else if (gear < 1)
             {
-                s++;
+                gear++;
             }
 
-            e = i;
+            e = rpm;
         }
     }
 }
