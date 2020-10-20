@@ -1,0 +1,9 @@
+/Users/Joyce.Yeung/Projects/TopGear/GearBox/bin/Debug/netcoreapp3.1/GearBox.deps.json
+/Users/Joyce.Yeung/Projects/TopGear/GearBox/bin/Debug/netcoreapp3.1/GearBox.dll
+/Users/Joyce.Yeung/Projects/TopGear/GearBox/bin/Debug/netcoreapp3.1/GearBox.pdb
+/Users/Joyce.Yeung/Projects/TopGear/GearBox/obj/Debug/netcoreapp3.1/GearBox.csprojAssemblyReference.cache
+/Users/Joyce.Yeung/Projects/TopGear/GearBox/obj/Debug/netcoreapp3.1/GearBox.AssemblyInfoInputs.cache
+/Users/Joyce.Yeung/Projects/TopGear/GearBox/obj/Debug/netcoreapp3.1/GearBox.AssemblyInfo.cs
+/Users/Joyce.Yeung/Projects/TopGear/GearBox/obj/Debug/netcoreapp3.1/GearBox.csproj.CoreCompileInputs.cache
+/Users/Joyce.Yeung/Projects/TopGear/GearBox/obj/Debug/netcoreapp3.1/GearBox.dll
+/Users/Joyce.Yeung/Projects/TopGear/GearBox/obj/Debug/netcoreapp3.1/GearBox.pdb

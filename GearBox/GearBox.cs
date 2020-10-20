@@ -1,44 +1,74 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GearBox
 {
     public class GearBox
     {
-        private int gear = 0;
-        private int e = 0;
+        private const int UpperRPM = 2000;
+        private const int LowerRPM = 500;
+        private const int BaseGear = 1;
+        private const int MaxGears = 6;
+        private int _gear = 0;
+        public Dictionary<int, Gear> Gears;
 
-        public void doit(int rpm)
+        public GearBox(int gear)
         {
-            if (gear < 0)
+            _gear = gear;
+        }
+
+
+        public GearBox(int gear, Dictionary<int, Gear> gears)
+        {
+            _gear = gear;
+            Gears = gears;
+        }
+
+
+
+
+        public void ShiftGear(int rpm)
+        {
+            if (Gears == null)
             {
-                // do nothing!
-                e = rpm;
+                ShiftBasedOnUppderAndLowerRPM(rpm);
+                return;
             }
-            else
+            ShiftGearBasedOnRPMRangeOnEachGear(rpm);
+
+        }
+
+        private void ShiftGearBasedOnRPMRangeOnEachGear(int rpm)
+        {
+            foreach (var gear in Gears)
             {
-                if (gear > 0)
+                var gearLevel = gear.Value;
+                if (rpm < gearLevel.UpperRPM && rpm > gearLevel.LowerRPM)
                 {
-                    if (rpm > 2000)
-                    {
-                        gear++;
-                    }
-                    else if (rpm < 500)
-                    {
-                        gear--;
-                    }
+                    _gear = gear.Key;
+                    return;
                 }
-            }
 
-            if (gear > 6)
-            {
-                gear--;
+                _gear = 0;
             }
-            else if (gear < 1)
-            {
-                gear++;
-            }
+        }
 
-            e = rpm;
+        private void ShiftBasedOnUppderAndLowerRPM(int rpm)
+        {
+            if (rpm > UpperRPM && _gear < MaxGears)
+            {
+                _gear++;
+            }
+            if (rpm < LowerRPM && _gear > BaseGear)
+            {
+                _gear--;
+            }
+        }
+
+        public int GetCurrentGear()
+        {
+            return _gear;
         }
     }
+
 }

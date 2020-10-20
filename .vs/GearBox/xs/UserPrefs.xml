@@ -1,17 +1,21 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="GearBox/GearBox.cs">
+﻿<Properties StartupConfiguration="{D5B214DE-551F-41B2-9391-D8A3F2151004}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GearBox.Tests/GearBoxTest.cs">
     <Files>
-      <File FileName="GearBox.Tests/GearBoxTest.cs" Line="1" Column="1" />
-      <File FileName="GearBox/GearBox.cs" Line="1" Column="1" />
+      <File FileName="GearBox/GearBox.cs" Line="31" Column="39" />
+      <File FileName="GearBox.Tests/ConsoleUserInputTest.cs" />
+      <File FileName="GearBox.Tests/GearBoxTest.cs" Line="54" Column="44" NotebookId="1" />
+      <File FileName="GearBox/ConsoleUserInput.cs" NotebookId="1" />
+      <File FileName="GearBox/Gear.cs" NotebookId="1" />
+      <File FileName="GearBox/IInputOutput.cs" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GearBox" expanded="True">
-            <Node name="GearBox" expanded="True">
-              <Node name="GearBox.cs" selected="True" />
+            <Node name="GearBox" expanded="True" />
+            <Node name="GearBox.Tests" expanded="True">
+              <Node name="GearBoxTest.cs" selected="True" />
             </Node>
-            <Node name="GearBox.Tests" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -19,6 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.GearBox.Tests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
